@@ -767,6 +767,10 @@ li {
 }
 
 /* owner */
+.owner{
+    overflow: hidden;
+    position: relative;
+}
 .owner-top {
     display: flex;
     justify-content: center;
@@ -792,6 +796,16 @@ li {
     margin: 2rem 0;
 }
 
+.owner-top img{
+    opacity: 0.6;
+}
+/* owner img whenever clicked take this class */
+.clicked {
+    width: 110px;
+    height: 110px;
+    transform: translate(0 , -10px);
+    opacity: 1 !important;
+}
 /* contact */
 #contact {
     text-align: center;

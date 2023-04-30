@@ -234,7 +234,7 @@
           <div class="timer-box">
             <h2 class="number">
               <span
-                class="timer"
+                class="timer project-counter"
                 data-from="0"
                 data-to="1500"
                 data-speed="1500"
@@ -452,17 +452,28 @@
       <div class="container-web container-mobile">
         <div class="owner-top">
           <div>
-            <img src="./assets/images/1.png (2).webp" alt="owner" />
+            <img class="clicked" src="./assets/images/1.png (2).webp" alt="owner" data-select="first" />
           </div>
           <div>
-            <img src="./assets/images/1.png (2).webp" alt="owner" />
+            <img src="./assets/images/1.png (2).webp" alt="owner" data-select="second" />
           </div>
           <div>
-            <img src="./assets/images/1.png (2).webp" alt="owner" />
+            <img src="./assets/images/1.png (2).webp" alt="owner" data-select="third" />
           </div>
         </div>
         <div class="owner--desc">
-          <div class="owner--desc-inner">
+          <div class="owner--desc-inner" data-select="first">
+                    <p>
+              These cases are perfectly simple and easy to distinguish. In a
+              free hour, when our power of choice is untrammelled and when
+              nothing prevents our being able.
+            </p>
+
+            <h4>ROBERT JONSON</h4>
+            <p>Business Owner</p>
+          </div>
+          <div class="owner--desc-inner" data-select="second">
+         
             <p>
               These cases are perfectly simple and easy to distinguish. In a
               free hour, when our power of choice is untrammelled and when
@@ -471,16 +482,8 @@
             <h4>ROBERT JONSON</h4>
             <p>Business Owner</p>
           </div>
-          <div class="owner--desc-inner">
-            <p>
-              These cases are perfectly simple and easy to distinguish. In a
-              free hour, when our power of choice is untrammelled and when
-              nothing prevents our being able.
-            </p>
-            <h4>ROBERT JONSON</h4>
-            <p>Business Owner</p>
-          </div>
-          <div class="owner--desc-inner">
+          <div class="owner--desc-inner" data-select="third">
+        
             <p>
               These cases are perfectly simple and easy to distinguish. In a
               free hour, when our power of choice is untrammelled and when

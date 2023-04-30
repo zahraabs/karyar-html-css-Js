@@ -32,3 +32,43 @@ if(timer.length) {
       timer.countTo();
   });
 }
+
+const ownerImgs = document.querySelectorAll('.owner-top div img')
+const decs = document.querySelectorAll('.owner--desc .owner--desc-inner')
+
+
+decs.forEach(dec => {
+  dec.style.display = 'none'
+  if (dec.dataset.select === 'first') {
+    dec.style.display = 'block'
+  }
+})
+
+ownerImgs.forEach(img => img.addEventListener('click', function () {
+  ownerImgs.forEach(img => img.classList.remove('clicked'))
+  this.classList.add('clicked')
+  const selectedImgDataset = this.dataset.select
+
+  decs.forEach(dec => {
+    dec.style.display = 'none'
+    if (dec.dataset.select === selectedImgDataset) {
+      dec.style.display = 'block'
+    }
+  })
+
+}))
+
+
+const projectCounter = document.querySelector('.project-counter')
+let projectCounterContent = 10
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY > projectCounter.offsetTop - (window.innerHeight)) {
+
+    setInterval(() => {
+      projectCounterContent += 1
+    }, 100)
+
+    projectCounter.innerHTML = projectCounterContent
+  }
+})
