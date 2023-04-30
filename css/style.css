@@ -120,6 +120,11 @@ li {
     z-index: 5;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 85%;
+  }
 /* Header__top section */
 .header__top {
     display: none;
@@ -191,7 +196,7 @@ li {
 
 .nav {
     display: block;
-    width: 300px;
+    /* width: 300px; */
     position: fixed;
     top: 0;
     left: -300px;
@@ -259,26 +264,16 @@ li {
         display: none;
     }
 
-    .header__center {
-        position: fixed;
-        width: 100%;
-        left: 0;
-        right: 0;
-        z-index: 999;
-        top: 50px;
-        background: rgb(22, 22, 22, 0.3);
-    }
-
     .header__center-web {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 2rem 0;
+        background: rgb(44, 44, 44, 0.7);
     }
 
     .nav {
-        position: inherit;
-        width: auto;
+        position: static;
         background-color: transparent;
         transition: none;
     }
