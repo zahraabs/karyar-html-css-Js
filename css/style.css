@@ -563,8 +563,9 @@ li {
     margin: 2rem auto;
 }
 
-.recent-img {
+.recent-artl--item {
     position: relative;
+
 }
 
 .recent-img_big {
@@ -577,23 +578,43 @@ li {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: table;
     text-align: center;
     background: rgba(40, 174, 96, 0.7);
-    /* transform: translateX(-50%); */
+    transform: translateX(-50%);
     opacity: 0;
     transition: 0.5s;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
-.recent-img:hover .recent-artl--hover {
+.recent-artl--hover-big{
+    width: 90%;
+    height: 50%;
+    transform: translateX(0);
+}
+
+.recent-artl--item:hover .recent-artl--hover {
     opacity: 1;
     visibility: visible;
+    transform: translateX(12%);
 }
 
-/* ----------------------------------- */
+.recent-artl--item:hover.recent-artl--hover-big{
+    transform: translateX(0%);
+}
+
+.recent-artl--content{
+    padding: 15rem 2rem;
+}
+.recent-artl--content-big{
+    padding: 8.2rem ;
+}
+
+.recent-artl--content a{
+    color: var(--color-white);
+}
 .recent-btn {
     color: var(--color-primary);
     border: 1px solid var(--color-primary);
@@ -616,6 +637,14 @@ li {
     .recent-artl__bottom {
         display: flex;
         justify-content: space-between;
+    }
+    .recent-artl--hover {
+        width: 100%;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+    .recent-artl--item:hover .recent-artl--hover{
+        transform: translateX(0);
     }
 }
 
